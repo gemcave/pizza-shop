@@ -11,7 +11,7 @@
 				<div class="">
 					Price: <%= p.price%> rub
 				</div>
-				<button type="button" class="btn btn-primary btn-sm btn-success" onclick="add_to_cart()">Add to cart</button>
+				<button type="button" class="btn btn-primary btn-sm btn-success" onclick="add_to_cart(<%= p.id%>)">Add to cart</button>
 			</div>
 	<% end %>
 </div>
