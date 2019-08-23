@@ -1,0 +1,16 @@
+<h2>Welcome to PizzaShop!</h2>
+<div class="row">
+	<% @products.each do |p| %>
+			<div class="col-md-3">
+				<div class=""><%= p.title %></div>
+				<div class=""><img src="<%= p.path_to_image %>" alt=""></div>
+				<div class=""><%= p.description %></div>
+				<div class="">
+					Size: <%= p.size%> cm
+				</div>
+				<div class="">
+					Price: <%= p.price%> rub
+				</div>
+			</div>
+	<% end %>
+</div>
