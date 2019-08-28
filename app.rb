@@ -24,6 +24,11 @@ get '/cart' do
   erb :cart
 end
 
+post '/place_order' do
+	@order = Order.create [:order]
+	erb :order_placed
+end
+
 post '/cart' do
 	@orders_input = params[:orders_input]
 	@items = parse_orders_line @orders_input
